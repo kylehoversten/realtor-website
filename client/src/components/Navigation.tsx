@@ -22,13 +22,20 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="group cursor-pointer">
-              <div className="flex flex-col">
-                <span className="font-display text-2xl font-bold text-primary tracking-wide">
-                  KYLE HOVERSTEN
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-secondary font-bold group-hover:text-primary transition-colors">
-                  Real Estate & Investing
-                </span>
+              <div className="flex items-center gap-3">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D5603AQH7FQWo6WVY5w/profile-displayphoto-shrink_200_200/B56ZXYEFSZHEAY-/0/1743086704344?e=2147483647&v=beta&t=NnY9ExVm3sZhfO6PVfUsDesYenmVnFc3-awryVi8RRg"
+                  alt="Kyle Hoversten"
+                  className="w-10 h-10 rounded-full object-cover border border-gray-100 shadow-sm"
+                />
+                <div className="flex flex-col">
+                  <span className="font-display text-2xl font-bold text-primary tracking-wide">
+                    KYLE HOVERSTEN
+                  </span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-secondary font-bold group-hover:text-primary transition-colors">
+                    Real Estate & Investing
+                  </span>
+                </div>
               </div>
             </Link>
           </div>

@@ -88,14 +88,12 @@ app.use((req, res, next) => {
   // Use 0.0.0.0 in Replit, 127.0.0.1 for local development (Windows IPv4)
   const host = process.env.REPL_ID ? "0.0.0.0" : "127.0.0.1";
   
-  httpServer.listen(
-    {
-      port,
-      host,
-      reusePort: true,
-    },
-    () => {
-      log(`serving on port ${port}`);
-    },
-  );
+  const listenOptions: any = { port, host };
+  if (process.platform !== "win32") {
+    listenOptions.reusePort = true;
+  }
+
+  httpServer.listen(listenOptions, () => {
+    log(`serving on port ${port}`);
+  });
 })();

@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { FileText, Award, Target, Briefcase } from "lucide-react";
+import { FileText, Award, Target, Briefcase, Users } from "lucide-react";
 
 export default function Story() {
   const experiences = [
