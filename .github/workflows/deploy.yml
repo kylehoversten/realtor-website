@@ -29,10 +29,24 @@ jobs:
       - name: Build (client + server)
         run: npm run build
 
-      - name: Add CNAME for custom domain
-        # Write the custom domain into dist/public/CNAME so Pages config is applied
+      - name: Inspect workspace after build (debug)
+        # Print runtime versions and directory contents to aid debugging
         run: |
+          echo "Node: $(node -v)"
+          echo "NPM: $(npm -v)"
+          echo "Listing repo root"
+          ls -la
+          echo "Listing dist"
+          ls -la dist || true
+          echo "Listing dist/public"
+          ls -la dist/public || true
+
+      - name: Add CNAME for custom domain
+        # Write the custom domain into dist/public/CNAME so Pages config is applied; create dir if needed
+        run: |
+          mkdir -p dist/public
           echo "kylehoversten.com" > dist/public/CNAME
+          ls -la dist/public
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v4
