@@ -1,0 +1,95 @@
+make a business website for this business: I am a Real-estate Investor and Realtor out of Shakopee, Minnesota associated with ReMax. I want a website that has links to my 
+resume(https://docs.google.com/document/d/1pIA__DqcR9Zy7Boxd9sAAU2E-dFXhMEU/edit?usp=sharing&ouid=111821333543450558658&rtpof=true&sd=true),
+instagram(https://www.instagram.com/kylehoverstenrealestate/),
+email(khoversten@comcast.net),
+linkedin(https://www.linkedin.com/in/kyle-hoversten-907a956),
+phone number(612-210-7777)
+
+and social media accounts. The main content of the website will be my story as a real-estate investor and i want an area to make blogs to post to my customers to answer 
+common questions about realty as well. I want to also be able to add media to my blog posts (pictures/videos). I don't want a database and i want a react web app 
+thats publishable via Github Pages. I will be hosting this website on github and need a fast and easy way to add blogs to the website and update often which can be a local 
+form that changes the code, adds the blog, and then i just have to re-push the code to github to change the page. I also own kylehoversten.com on GoDaddy and want to host 
+it on that url eventually once everything is set up. 
+To personalize the website here is my resume and some info about me don't include all of it but just to know some more informmation about me to personalize the site:
+Kyle Hoversten 
+1678 Chateau Ave  •  Shakopee, MN 55379
+Kyle.hoversten@medtronic.com • 612.210.7777
+
+
+Medical Device Professional
+Sales  ●  Leadership ●  Strategic Planning and Execution  ●  New Product Launch  
+
+Results driven, highly organized professional, with proven strength in Leadership,  Sales, and Clinical Expertise.  Extensive experience working in a wide variety of healthcare settings.  Consistent in attaining over 100% to revenue goal.  Excellent  communication, team building, and conflict management skills, with demonstrated success in a fast-paced work environment.
+
+— Areas of Expertise —
+
+History of hiring and developing award-winning teams
+Proven track record of motivating team members
+Capturing Market Share
+
+
+Excellent problem solving skills with ability to identify and resolve obstacles
+Product Knowledge and Promotions
+Clinical and Healthcare Operational Excellence
+
+Professional Experience
+Medtronic - Minneapolis, MN	2012 to Present
+
+Pain Interventions Sales Rep 2 (2022-2023)
+
+Sold Neurmodulation Portfolio to Pain Physicians in an $8M Minnesota based Territory.  Portfolio included Spinal Cord Stimulators, Intrathecal Pump therapy, RF Ablation, and Ballon Kyphoplasty.   Attained 100% revenue goal for three out of four quarters.    
+Provided guidance to physician and staff during surgical use of products for chronic pain patients
+Developed and cultivated relationships with key physicians to achieve goals
+Provided training and in service in the operating room and clinic staff for all Medtronic products
+
+
+Clinical Specialist Manager (2012 - 2022)
+
+Responsible for leading a team of 13 Clinical Specialists in the Neuromodulation - Pain and Interventional Spine.   Partner with District Sales Manager and Sales Team  to execute messaging and expand district revenue generation tactics.  Execute programs to increase awareness and market share for the Neuromodulation and Interventional Spine Divisions.  Execute national initiatives to support, develop, and expand the Clinical Specialist Organization in the Pain,  ITB, and Interventional Spine Market spaces.  
+
+Partnered with Field Sales and Corporate contacts to increase communication and awareness of new technologies. 
+Lead the alignment of Clinical Specialist support to improve customer experience, patient outcome and District revenue goals
+Fostered an open-door leadership style to increase coaching and developmental opportunities for team members
+Collaborated with Corporate Partners with New Hire Training Class for Sales Representatives and Clinical Specialists 
+
+
+KCI, Kinetic Concepts Inc. — Minneapolis MN                                                              2002 - 2012
+Regional Professional Education Manager–Active Healing Solutions 	   2011 to 2012
+
+Responsible for all aspects of professional education within a thirteen state sales region in the Upper-Midwest.  Collaborated with sales management team to identify all logistical needs for regional and national programs.  Managed Relationships with numerous physicians to ensure an excellent pipeline of presenters for the speakers bureau.  Managed monthly trainings with District Clinical Specialists to provide ongoing coaching and development. 
+
+Surpassed annual education programming goals while consistently executing under budget.
+Achieved 337% to quota for educational programming to healthcare providers in 2011.
+Managed the logistics and execution of cadaver lab training for New Product Specialty Team.
+Designed and executed educational programs via Mobile Surgical Suite van in 19 medical facilities across four states.
+
+
+Account Executive / Sales Rep – KCI - Active Healing Solutions Division            2002-2011
+
+Responsible for managing and growing revenue for a $1.8M territory in the Active Healing Solutions division of KCI.  Identified new product revenue opportunities and maintained base business revenue through superior customer relationships.  Considered regional expert for developing new treatment plan for patients to use Negative Pressure Wound device with complex wounds. 
+
+Demonstrated proven sales performance as Account Executive; obtained promotion to Regional Professional Education Manager.
+Consistently ranked at the top of an 800 person Sales Force, achieving 100% to quota as an Account Executive years, 2009- 2011.
+Selected by the senior management to be responsible for all Field Sales Training in sales district, functioning as a mentor and coach for new employees.
+Exemplified success selling in hospital, clinic, and operating room setting to a wide variety of Physician specialties through superior clinical knowledge and reputation of providing complete customer satisfaction.
+
+Methodist Hospital — St. Louis Park, MN 							       1997-2003
+Registered Nurse
+
+Provided optimal physical, spiritual, and psychological care to complex patients in a wide range of hospital specialty areas.  These include; Intensive Care Unit (ICU), Coronary Care Unit (CCU), Flying Squad, Emergency Room (ER), Radiology, Orthopedics, Neurology, Medical/Surgical, and Rehabilitation. Used excellent communication skills with a cross-functional team to improve patient outcomes.
+
+Trevilla of Robininsdale — Robbinsdale, MN 	1996-1997
+Registered Nurse, Nursing Supervisor
+
+Educational Background
+Master of Science in Healthcare Administration 
+University of Saint Francis, Joliet, IL
+
+Bachelor of Science in Health Arts 
+University of Saint Francis, Joliet, IL
+
+Associate of Science in Nursing Registered Nurse/Associate of Arts 
+Minneapolis Community College, Minneapolis, MN
+License
+Registered Nurse ▪ Minnesota Board of Nursing: 1996–Present
+
