@@ -35,12 +35,12 @@ jobs:
           echo "kylehoversten.com" > dist/public/CNAME
 
       - name: Upload artifact to GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist/public
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
           
       - name: Success message
         run: echo "Deployed to GitHub Pages"
