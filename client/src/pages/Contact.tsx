@@ -81,8 +81,9 @@ export default function Contact() {
                   <div>
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Office</p>
                     <p className="text-lg font-medium text-primary">
-                      ReMax Advantage Plus<br />
-                      Shakopee, MN
+                      207 N Chestnut St<br />
+                      Chaska, MN<br />
+                      55318<br />
                     </p>
                   </div>
                 </div>
