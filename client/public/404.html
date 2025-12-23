@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Page not found — Redirecting…</title>
+    <style>
+      html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;display:flex;align-items:center;justify-content:center;background:#fff}
+      .msg{max-width:36rem;padding:2rem;text-align:center;color:#374151}
+      a{color:#0ea5a0}
+    </style>
+  </head>
+  <body>
+    <div class="msg">
+      <h1 style="margin-top:0">Page not found</h1>
+      <p>If you're not redirected, <a id="home-link" href="/">click here</a> to go home.</p>
+    </div>
+
+    <script>
+      // Try to load the SPA index and replace the current document so client-side routing can handle the path.
+      (function() {
+        // Use relative path to be robust to repo subpaths
+        const indexPath = './index.html';
+        fetch(indexPath)
+          .then(function(res) {
+            if (!res.ok) throw new Error('No index');
+            return res.text();
+          })
+          .then(function(html) {
+            document.open();
+            document.write(html);
+            document.close();
+            // Ensure the history path remains the original URL so the SPA router can read it
+            try { history.replaceState({}, '', location.pathname + location.search + location.hash); } catch (e) {}
+          })
+          .catch(function() {
+            // If fetch fails, leave the 404 message visible for users without JS or network access
+            document.getElementById('home-link').href = '/';
+          });
+      })();
+    </script>
+  </body>
+</html>
