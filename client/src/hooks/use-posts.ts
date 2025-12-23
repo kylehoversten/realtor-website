@@ -19,16 +19,14 @@ export function usePost(slug: string) {
       // Try server API first (works for local/dev with backend). If running as a static site (GitHub Pages)
       // the API won't exist, so fall back to reading the static `posts.json` and finding the post by slug.
       const url = buildUrl(api.posts.get.path, { slug });
-      const res = await fetch(url);
-      if (res.status === 404) {
-        // Post genuinely not found on server
-        return null;
-      }
-      if (res.ok) {
+      const res = await fetch(url).catch(() => null);
+
+      // If we got a successful response, return it
+      if (res && res.ok) {
         return api.posts.get.responses[200].parse(await res.json());
       }
 
-      // If the fetch failed (e.g., 404 from the server root because no backend), fall back to static list
+      // Otherwise, fall back to the static posts list (works on GitHub Pages where no API exists)
       const listRes = await fetch(api.posts.list.path);
       if (!listRes.ok) throw new Error("Failed to fetch posts");
       const posts = api.posts.list.responses[200].parse(await listRes.json());
