@@ -122,7 +122,7 @@ export default function Home() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   {/* Unsplash image of professional man in suit/business casual */}
                   <img 
-                    src="https://media.licdn.com/dms/image/v2/D5603AQH7FQWo6WVY5w/profile-displayphoto-shrink_200_200/B56ZXYEFSZHEAY-/0/1743086704344?e=2147483647&v=beta&t=NnY9ExVm3sZhfO6PVfUsDesYenmVnFc3-awryVi8RRg" 
+                    src="/headshot_2.PNG" 
                     alt="Kyle Hoversten" 
                     className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
                   />
