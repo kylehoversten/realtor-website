@@ -16,11 +16,23 @@ export function usePost(slug: string) {
   return useQuery({
     queryKey: [api.posts.get.path, slug],
     queryFn: async () => {
+      // Try server API first (works for local/dev with backend). If running as a static site (GitHub Pages)
+      // the API won't exist, so fall back to reading the static `posts.json` and finding the post by slug.
       const url = buildUrl(api.posts.get.path, { slug });
       const res = await fetch(url);
-      if (res.status === 404) return null;
-      if (!res.ok) throw new Error("Failed to fetch post");
-      return api.posts.get.responses[200].parse(await res.json());
+      if (res.status === 404) {
+        // Post genuinely not found on server
+        return null;
+      }
+      if (res.ok) {
+        return api.posts.get.responses[200].parse(await res.json());
+      }
+
+      // If the fetch failed (e.g., 404 from the server root because no backend), fall back to static list
+      const listRes = await fetch(api.posts.list.path);
+      if (!listRes.ok) throw new Error("Failed to fetch posts");
+      const posts = api.posts.list.responses[200].parse(await listRes.json());
+      return posts.find((p) => p.slug === slug) || null;
     },
   });
 }

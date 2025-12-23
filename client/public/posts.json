@@ -10,11 +10,11 @@
   },
   {
     "title": "SECOND BLOG",
-    "content": "This is the first post on my new website. Stay tuned for updates on the market and investment tips!",
-    "excerpt": "Welcome to my new website!",
+    "content": "This is another post to demonstrate multiple entries on the blog.",
+    "excerpt": "A second post for testing.",
     "date": "2025-12-22",
-    "slug": "welcome-post",
+    "slug": "second-blog",
     "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "id": 1
+    "id": 2
   }
 ]
