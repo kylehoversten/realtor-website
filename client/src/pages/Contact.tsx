@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
+const endpoint = "https://formspree.io/f/yourFormId";
+
 export default function Contact() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -16,8 +18,18 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    const formData = new FormData(e.target as HTMLFormElement);
+    const res = await fetch(endpoint, { method: "POST", body: formData });
+    if (!res.ok) throw new Error("Failed to send");
+
+    const first = formData.get("first-name");
+    const last = formData.get("last-name");
+    const email = formData.get("email");
+    const phone = formData.get("phone");
+    const message = formData.get("message");
+    
+    const body = `Name: ${first} ${last}\nEmail: ${email}\n\n${message}`;
+    window.location.href = `mailto:khoversten@comcast.net?subject=${encodeURIComponent("Website Contact")}&body=${encodeURIComponent(body)}`;
     
     toast({
       title: "Message Sent!",
@@ -111,28 +123,28 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">First Name</label>
-                    <Input required placeholder="Jane" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
+                    <Input name="first-name" required placeholder="Jane" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Last Name</label>
-                    <Input required placeholder="Doe" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
+                    <Input name="last-name" required placeholder="Doe" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Email</label>
-                    <Input required type="email" placeholder="jane@example.com" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
+                    <Input name="email" required type="email" placeholder="jane@example.com" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Phone</label>
-                    <Input type="tel" placeholder="(555) 123-4567" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
+                    <Input name="phone" type="tel" placeholder="(555) 123-4567" className="bg-gray-50 border-gray-200 focus:border-primary h-12" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Message</label>
-                  <Textarea required placeholder="How can I help you with your real estate goals?" className="min-h-[150px] bg-gray-50 border-gray-200 focus:border-primary resize-none p-4" />
+                  <Textarea name="message" required placeholder="How can I help you with your real estate goals?" className="min-h-[150px] bg-gray-50 border-gray-200 focus:border-primary resize-none p-4" />
                 </div>
 
                 <Button 
