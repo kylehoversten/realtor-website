@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { useState } from "react";
-import { Menu, X, Phone, Linkedin, Instagram } from "lucide-react";
+import { Menu, X, Phone, Linkedin, Instagram, Facebook } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -74,6 +74,15 @@ export function Navigation() {
               >
                 <Instagram size={20} />
               </a>
+              <a 
+                href="https://www.facebook.com/kyle.hoversten/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-[#1877F2] transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
               <Button 
                 variant="outline" 
                 className="ml-2 border-primary text-primary hover:bg-primary hover:text-white transition-all rounded-full px-6"
@@ -122,6 +131,9 @@ export function Navigation() {
               </a>
               <a href="https://www.instagram.com/kylehoverstenrealestate/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="text-gray-400 hover:text-[#E1306C]" />
+              </a>
+              <a href="https://www.facebook.com/kylehoversten" target="_blank" rel="noopener noreferrer">
+                <Facebook className="text-gray-400 hover:text-[#1877F2]" />
               </a>
             </div>
           </div>
