@@ -39,7 +39,7 @@ export default function Home() {
                 <span className="text-white/90 font-light italic font-display">Client Focused.</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
-                Combining strategic medical device leadership experience with deep market knowledge to deliver exceptional real estate outcomes.
+                Realtor® & investor — buying and improving properties since 19. I combine real-world investing experience and a background in medical device leadership to deliver strategic, data-driven results.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -135,14 +135,14 @@ export default function Home() {
 
               <div className="space-y-8">
                 <div>
-                  <h4 className="text-secondary font-bold tracking-widest uppercase mb-2">My Story</h4>
-                  <h2 className="font-display text-4xl lg:text-5xl font-bold text-primary mb-6">From Medical Devices to Real Estate Success</h2>
+                  <h4 className="text-secondary font-bold tracking-widest uppercase mb-2">About Kyle Hoversten</h4>
+                  <h2 className="font-display text-4xl lg:text-5xl font-bold text-primary mb-6">Investor • Realtor® • Portfolio Manager</h2>
                 </div>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Before real estate, I built a successful career in the medical device industry, where precision, trust, and results were non-negotiable. Today, I apply those same principles to help families and investors navigate the housing market.
+                  I bought my first rental at 19 and have been investing ever since—renovating properties, building systems, and scaling a portfolio that now includes multi-family units and other rentals.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  As a ReMax professional and experienced investor, I don't just sell homes—I help you build your future.
+                  With a 20+ year background in the medical device industry and a full-time shift to real estate in 2023, I help clients make strategic, informed decisions throughout every major life transition.
                 </p>
                 
                 <div className="pt-4">

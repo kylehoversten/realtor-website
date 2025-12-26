@@ -83,7 +83,8 @@ export default function BlogPost() {
               </div>
               <div>
                 <h3 className="font-display font-bold text-lg text-primary">Written by Kyle Hoversten</h3>
-                <p className="text-gray-600 text-sm">Real Estate Investor & Realtor based in Shakopee, MN. Combining business strategy with local market expertise.</p>
+                <p className="text-gray-600 text-sm">Realtor® & investor — bought a first rental at 19, grew a portfolio of multi-family and rental properties, and transitioned to real estate full-time in 2023. Based in Shakopee, MN.</p>
+                <Link href="/story"><span className="text-secondary font-medium hover:underline cursor-pointer">Read Kyle’s full story</span></Link>
               </div>
             </div>
           </div>

@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
-const endpoint = "https://formspree.io/f/yourFormId";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -17,27 +16,53 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    const formData = new FormData(e.target as HTMLFormElement);
-    const res = await fetch(endpoint, { method: "POST", body: formData });
-    if (!res.ok) throw new Error("Failed to send");
 
-    const first = formData.get("first-name");
-    const last = formData.get("last-name");
-    const email = formData.get("email");
-    const phone = formData.get("phone");
-    const message = formData.get("message");
-    
-    const body = `Name: ${first} ${last}\nEmail: ${email}\n\n${message}`;
-    window.location.href = `mailto:khoversten@comcast.net?subject=${encodeURIComponent("Website Contact")}&body=${encodeURIComponent(body)}`;
-    
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you shortly.",
-    });
-    
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+    try {
+      const form = e.target as HTMLFormElement;
+      const fd = new FormData(form);
+
+      const first = (fd.get('first-name') as string) || '';
+      const last = (fd.get('last-name') as string) || '';
+      const email = (fd.get('email') as string) || '';
+      const phone = (fd.get('phone') as string) || '';
+      const message = (fd.get('message') as string) || '';
+
+      const bodyLines = [
+        `Name: ${first} ${last}`,
+        `Email: ${email}`,
+        `Phone: ${phone}`,
+        '',
+        'Message:',
+        message,
+        '',
+        `Page: ${window.location.href}`,
+      ];
+
+      const subject = `Website Contact from ${first} ${last}`;
+      const mailto = `mailto:khoversten@comcast.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        bodyLines.join('\n')
+      )}`;
+
+      // Small delay so the UI updates before opening mail client
+      await new Promise((r) => setTimeout(r, 200));
+
+      window.location.href = mailto;
+
+      toast({
+        title: 'Opening mail client',
+        description: 'Your email client should open to send the message.',
+      });
+
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: 'Error',
+        description: 'Could not open mail client. Please email khoversten@comcast.net directly.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

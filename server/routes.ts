@@ -46,9 +46,9 @@ async function seedDatabase() {
   const posts = await storage.getPosts();
   if (posts.length === 0) {
     await storage.createPost({
-      title: "Welcome to my Real Estate Blog",
-      content: "This is the first post on my new website. Stay tuned for updates on the market and investment tips!",
-      excerpt: "Welcome to my new website!",
+      title: "Welcome — About Kyle Hoversten",
+      content: "Hi, I’m Kyle. I bought my first rental at 19 and have been investing ever since. This blog shares market insights, renovation lessons, and practical strategies for investors and homeowners. Stay tuned for updates on local market trends and investment tips.",
+      excerpt: "Welcome — About Kyle Hoversten",
       date: new Date().toISOString().split('T')[0],
       slug: "welcome-post",
       imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"

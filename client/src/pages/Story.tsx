@@ -7,19 +7,19 @@ import { FileText, Award, Target, Briefcase, Users } from "lucide-react";
 export default function Story() {
   const experiences = [
     {
-      title: "Real Estate Professional",
-      role: "Realtor & Investor",
-      description: "Combining market analysis with negotiation expertise to serve buyers, sellers, and investors in the Twin Cities market."
+      title: "Early Investor",
+      role: "First rental purchase at 19",
+      description: "Bought and renovated my first rental property at 19, learning hands-on how value is created through strategic improvements."
+    },
+    {
+      title: "Portfolio Builder",
+      role: "56 rental units",
+      description: "Co-founded an investor LLC and helped grow a portfolio that includes duplexes, light industrial, and multi-family properties."
     },
     {
       title: "Medical Device Leadership",
-      role: "Strategic Professional",
-      description: "Years of experience in high-pressure environments, managing complex stakeholders and delivering critical results."
-    },
-    {
-      title: "Community Focused",
-      role: "Shakopee Resident",
-      description: "Deeply invested in the local community, understanding the nuances of our schools, neighborhoods, and future developments."
+      role: "Clinical & Sales Leadership",
+      description: "Over 20 years in the medical field, including a decade at Medtronic as Clinical Specialist Manager for Neuromodulation — honing negotiation, leadership, and complex problem solving."
     }
   ];
 
@@ -46,24 +46,32 @@ export default function Story() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl font-bold mb-6 border-l-4 border-secondary pl-4">A Foundation of Excellence</h2>
-              <p className="mb-8 leading-relaxed text-gray-600">
-                My path to real estate wasn't traditional, and that's exactly why I bring unique value to my clients. With a robust background as a Medical Device Professional, I spent years honing skills that are directly transferable to your real estate transaction: strategic planning, complex negotiation, and an unyielding focus on results.
+              <h2 className="text-3xl font-bold mb-6 border-l-4 border-secondary pl-4">About Kyle Hoversten</h2>
+              <p className="mb-6 leading-relaxed text-gray-600">
+                Real estate has been a defining part of my life for more than two decades—long before I became a Realtor. I purchased my first rental property at 19 using an FHA loan and a modest down payment. Over the next dozen years I renovated and improved that property, which taught me the power of strategic improvements, equity building, and long-term appreciation.
               </p>
-              
+
+              <p className="mb-6 leading-relaxed text-gray-600">
+                Since then, I have partnered with other investors across a variety of property types, including light industrial, duplexes, and multi-family complexes. In 2014 I co-founded an LLC with three partners and together we grew a portfolio that now includes over 50 rental units. Designing systems and processes to operate and scale that portfolio is one of the most valuable experiences of my career.
+              </p>
+
               <div className="my-12 p-8 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm">
                 <h3 className="text-xl font-bold text-primary mb-4 flex items-center">
                   <Target className="w-6 h-6 mr-2 text-secondary" />
-                  My Philosophy
+                  Professional Background
                 </h3>
                 <p className="italic text-gray-700 text-lg">
-                  "Real estate is one of the most significant financial decisions you will make. You deserve a partner who approaches it with the same rigor, professionalism, and strategic foresight as a major business acquisition."
+                  I spent over 20 years in the medical field, progressing from clinical support to medical device leadership. At Medtronic I served as Clinical Specialist Manager for Neuromodulation, where I learned communication, negotiation, and decision-making skills that translate directly to real estate transactions.
                 </p>
               </div>
 
-              <h2 className="text-3xl font-bold mb-6 mt-12">Why I Became an Agent</h2>
-              <p className="mb-8 leading-relaxed text-gray-600">
-                I've always been passionate about real estate investing. After seeing the gap in the market for truly data-driven, professional representation, I decided to transition my skills to help others achieve their property goals. Whether it's finding the perfect family home in Shakopee or identifying a high-yield investment property, I treat every transaction as if it were my own.
+              <h2 className="text-3xl font-bold mb-6 mt-12">Why I Do This</h2>
+              <p className="mb-6 leading-relaxed text-gray-600">
+                In 2023 I transitioned into real estate full-time and earned my Realtor® license. I partner with a seasoned broker and focus on making transactions strategic and stress-free. I love helping clients understand how appreciation and thoughtful improvements can accelerate value, whether they're buying their first home or expanding a portfolio.
+              </p>
+
+              <p className="mb-6 leading-relaxed text-gray-600">
+                My clinical and medical device experience also gives me a unique perspective when guiding clients through major life transitions, including moves to independent or assisted living. I take pride in providing clear, compassionate guidance at every step.
               </p>
             </motion.div>
 
