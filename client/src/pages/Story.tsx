@@ -98,7 +98,7 @@ export default function Story() {
 
             <div className="text-center mt-12">
               <a 
-                href="https://docs.google.com/document/d/1yWlVl_q_4XwX-YhZ-ZzZz/edit" 
+                href="https://docs.google.com/document/d/1pIA__DqcR9Zy7Boxd9sAAU2E-dFXhMEU/edit?usp=sharing&ouid=111821333543450558658&rtpof=true&sd=true" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
