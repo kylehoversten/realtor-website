@@ -17,12 +17,11 @@ export default function Home() {
           <div className="absolute inset-0 z-0">
             {/* Unsplash image of modern luxury home architecture */}
             <img 
-              src="https://pixabay.com/get/g2650246cdb84d6d7191094da7a2fc2ac76d777c974426d45c4ee7a0a4098634369e955a9a00a7166a78d3e8da95588bc6a8ff06751b43a9cab64b43f6f4fcfed_1280.jpg" 
+              src="https://www.drhorton.com/-/media/drhorton/productcatalog/620-minnesota/62385-rivertown-heights/623850000-rivertown-heights/08-dji_0126.jpg" 
               alt="Luxury Real Estate" 
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-primary/10"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -31,6 +30,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
+              <div className="inline-block bg-black/60 backdrop-blur-sm rounded-3xl p-6 md:p-10 max-w-3xl w-full">
               <h2 className="text-secondary font-bold tracking-[0.2em] uppercase mb-4 text-sm md:text-base">
                 Your Trusted Partner in Real Estate
               </h2>
@@ -54,6 +54,7 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
+            </div>
             </motion.div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FileText, Award, Target, Briefcase, Users } from "lucide-react";
@@ -97,16 +98,12 @@ export default function Story() {
             </div>
 
             <div className="text-center mt-12">
-              <a 
-                href="https://docs.google.com/document/d/1pIA__DqcR9Zy7Boxd9sAAU2E-dFXhMEU/edit?usp=sharing&ouid=111821333543450558658&rtpof=true&sd=true" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <Link href="/resume">
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white transition-all px-8 py-6 rounded-full text-lg">
                   <FileText className="mr-2 w-5 h-5" />
                   View Professional Resume
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

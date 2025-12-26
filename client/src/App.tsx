@@ -9,14 +9,14 @@ import Story from "@/pages/Story";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import Contact from "@/pages/Contact";
+import Resume from "@/pages/Resume";
 import Admin from "@/pages/Admin";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/story" component={Story} />
-      <Route path="/blog" component={Blog} />
+      <Route path="/story" component={Story} />      <Route path="/resume" component={Resume} />      <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/contact" component={Contact} />
       <Route path="/admin" component={Admin} />
